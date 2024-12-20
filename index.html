@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Weather App</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure correct path -->
+</head>
+<body>
+    <div class="weather-app">
+        <h1>AI Weather App</h1>
+        <label for="cityInput" style="display: none;">City Name</label> <!-- Hidden for accessibility -->
+        <input type="text" id="cityInput" placeholder="Enter city name" aria-label="City name">
+        <button id="getWeather">Get Weather</button>
+        <div id="weatherInfo" class="hidden">
+            <h2 id="cityName"></h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+            <h3 id="aiSuggestion"></h3>
+        </div>
+        <p id="error" class="hidden">City not found. Please try again.</p>
+    </div>
+    <script src="script.js"></script> <!-- Ensure correct path -->
+</body>
+</html>
